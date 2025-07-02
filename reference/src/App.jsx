@@ -1,12 +1,12 @@
 import React from 'react'
-import ScrollToSection from './Components/ScrolltoSection'
-import Value from './Components/Value'
+
+import CheckBox from './Components/CheckBox'
 
 
 const App = () => {
   return (
     <div>
-<Value/>
+<CheckBox/>
     </div>
   )
 }
