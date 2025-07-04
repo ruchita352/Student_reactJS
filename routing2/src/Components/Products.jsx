@@ -12,7 +12,7 @@ const Products = () => {
     const alreadyAdded = cartItems.find((i) => i.id === item.id);
     if (!alreadyAdded) {
       dispatch(add(item));
-      console.log("Product added:", item); // ✅ This works
+      console.log("Product added:", item); 
     }
   };
   

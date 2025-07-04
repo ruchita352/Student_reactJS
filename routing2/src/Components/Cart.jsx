@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart } from './slice/Cartslice'; // ✅ Correct import
+import { removeFromCart } from './slice/Cartslice'; 
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  console.log("Cart Items:", cartItems); // ✅ Should now show added products
+  console.log("Cart Items:", cartItems); 
 
   return (
     <div className="ml-48 mr-40 mt-16 grid grid-cols-3 gap-10">
@@ -28,7 +28,7 @@ const Cart = () => {
             <div className="absolute bottom-4 left-1/4">
               <button
                 className="bg-red-600 text-white px-6 py-2 rounded-3xl hover:bg-white hover:text-red-600 border border-red-600"
-                onClick={() => dispatch(removeFromCart(item))} // ✅ Correct action
+                onClick={() => dispatch(removeFromCart(item))} 
               >
                 Remove
               </button>
