@@ -7,13 +7,13 @@ import Products from './Components/Products'
 import Contactus from './Components/Contactus'
 import Footer from './Components/Footer'
 import { Provider } from 'react-redux'
-import Store from './Components/slice/Store';
+import { store } from './Components/slice/Store'
 import Cart from './Components/Cart'
 
 const App = () => {
   return (
     <div>
-    <Provider store={Store}>
+    <Provider store={store}>
       <BrowserRouter>
         <Navbar/>
           <Routes>

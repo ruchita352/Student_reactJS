@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
             
             <div class="pl-10 flex gap-10">
-             <a href='/cart'> <i class="fa-solid fa-cart-shopping hover:text-[#F7444E]"></i></a>
+             <NavLink to='/cart'> <i class="fa-solid fa-cart-shopping hover:text-[#F7444E]"></i></NavLink>
                 <i class="fa-solid fa-magnifying-glass hover:text-[#F7444E]"></i>
             </div>
         </div>
