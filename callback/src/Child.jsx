@@ -13,7 +13,7 @@ console.log('components rerenederd')
 const fetchData = useCallback(async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
     const json = await res.json();
-    setData(json);
+    setData(json); 
   }, []);
 
 export default Child
